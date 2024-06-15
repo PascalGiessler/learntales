@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "learntales"
+version = "0.1.0"
+description = ""
+authors = ["Pascal Giessler"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9.0,<3.9.7 || >3.9.7,<3.13"
+fastapi = "^0.111.0"
+gunicorn = "^22.0.0"
+loguru = "^0.7.2"
+python-dotenv = "^1.0.1"
+pydantic = "^2.7.1"
+langchain-community = "^0.2.1"
+langchain-nvidia-ai-endpoints = "^0.0.18"
+langchain = "^0.2.1"
+langchain-text-splitters = "^0.2.0"
+tiktoken = "^0.7.0"
+streamlit = "^1.35.0"
+unstructured = "^0.14.4"
+markdown = "^3.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

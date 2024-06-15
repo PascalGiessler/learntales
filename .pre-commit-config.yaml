@@ -1,0 +1,33 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-case-conflict
+      - id: check-builtin-literals
+      - id: check-json
+      - id: detect-aws-credentials
+      - id: detect-private-key
+      - id: check-ast
+      - id: debug-statements
+      - id: name-tests-test
+
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: "v2.3.0"
+    hooks:
+      - id: conventional-pre-commit
+        stages: [ commit-msg ]
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.7.2
+    hooks:
+      - id: pyupgrade
+        args: [ --py38-plus ]
+  - repo: https://github.com/gruntwork-io/pre-commit
+    rev: "v0.1.23"
+    hooks:
+      - id: helmlint
